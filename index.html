@@ -3,71 +3,336 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Skills</title>
+
+<title>Kazi Mohammad Ali Hossain | Cyber Security Expert</title>
 
 <style>
-    body {
-        margin: 0;
-        height: 100vh;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        background: #000;
-        font-family: "Courier New", monospace;
-        color: #00ff41;
-    }
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Segoe UI', sans-serif;
+}
 
-    .card {
-        text-align: center;
-        padding: 40px;
-        border: 2px solid #00ff41;
-        box-shadow: 0 0 20px #00ff41;
-        background: rgba(0, 0, 0, 0.8);
-    }
+body{
+    background:#050505;
+    color:white;
+    overflow-x:hidden;
+}
 
-    h1 {
-        font-size: 45px;
-        text-transform: uppercase;
-        text-shadow: 0 0 10px #00ff41;
-    }
+/* Animated Background */
+body::before{
+    content:"";
+    position:fixed;
+    width:100%;
+    height:100%;
+    background:
+    radial-gradient(circle at top,#00ffff22,transparent 40%),
+    radial-gradient(circle at bottom,#ff00ff22,transparent 40%);
+    z-index:-1;
+}
 
-    .skill {
-        font-size: 25px;
-        margin: 15px;
-        color: #00ffff;
-        text-shadow: 0 0 10px #00ffff;
-    }
+/* Header */
+header{
+    height:100vh;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+}
 
-    .skill:hover {
-        color: #ff0000;
-        text-shadow: 0 0 15px red;
-        cursor: pointer;
-    }
+.hero h1{
+    font-size:55px;
+    color:#00ffff;
+    text-shadow:0 0 20px cyan;
+}
 
-    .typing {
-        animation: glow 1s infinite alternate;
-    }
+.hero h2{
+    margin:20px;
+    color:#fff;
+}
 
-    @keyframes glow {
-        from {
-            text-shadow: 0 0 5px #00ff41;
-        }
-        to {
-            text-shadow: 0 0 20px #00ff41;
-        }
-    }
+.hero p{
+    color:#aaa;
+    font-size:20px;
+}
+
+
+/* Sections */
+
+section{
+    padding:70px 10%;
+}
+
+.title{
+    text-align:center;
+    font-size:40px;
+    color:#00ffff;
+    margin-bottom:40px;
+}
+
+
+/* Cards */
+
+.cards{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:25px;
+}
+
+.card{
+    width:280px;
+    padding:30px;
+    background:#111;
+    border:1px solid #00ffff55;
+    border-radius:20px;
+    transition:.4s;
+    text-align:center;
+}
+
+.card:hover{
+    transform:translateY(-15px) rotateY(10deg);
+    box-shadow:0 0 30px cyan;
+}
+
+
+.cyber{
+    color:#00ffff;
+}
+
+.marketing{
+    color:#ffcc00;
+}
+
+.python{
+    color:#00ff88;
+}
+
+.web{
+    color:#ff00ff;
+}
+
+
+/* Contact */
+
+.contact a{
+    color:#00ffff;
+    text-decoration:none;
+}
+
+.contact a:hover{
+    text-shadow:0 0 15px cyan;
+}
+
+
+/* Footer */
+
+footer{
+    text-align:center;
+    padding:20px;
+    background:#000;
+    color:#777;
+}
+
 </style>
 
 </head>
 
+
 <body>
 
-<div class="card">
-    <h1 class="typing">Skills</h1>
 
-    <div class="skill">> Cyber Security Expert</div>
-    <div class="skill">> Digital Marketing</div>
+<header>
+
+<div class="hero">
+
+<h1>Kazi Mohammad Ali Hossain</h1>
+
+<h2>
+Cyber Security Expert | Digital Marketer | Python Programmer | Web Developer
+</h2>
+
+<p>
+Welcome To My Digital World
+</p>
+
 </div>
+
+</header>
+
+
+
+<section>
+
+<h2 class="title">About Me</h2>
+
+<p style="text-align:center;font-size:20px;color:#ccc">
+
+I'm Kazi Mohammad Ali Hossain, Live in Bangladesh.
+CEO And Founder Of <b>Mawna Cyber Shield</b> And <b>Mawna SMM</b>.
+
+<br><br>
+
+I work with Cyber Security, Digital Marketing,
+Python Programming and Web Development.
+
+</p>
+
+</section>
+
+
+
+<section>
+
+<h2 class="title">My Work & Skills</h2>
+
+
+<div class="cards">
+
+
+<div class="card">
+<h2 class="cyber">
+🛡 Cyber Security Expert
+</h2>
+
+<p>
+Digital protection, security solutions and online safety.
+</p>
+</div>
+
+
+
+<div class="card">
+
+<h2 class="marketing">
+📈 Digital Marketing Expert
+</h2>
+
+<p>
+Helping businesses grow with digital strategies.
+</p>
+
+</div>
+
+
+
+
+<div class="card">
+
+<h2 class="python">
+🐍 Python Programmer
+</h2>
+
+<p>
+Automation, programming and smart solutions.
+</p>
+
+</div>
+
+
+
+
+<div class="card">
+
+<h2 class="web">
+💻 Web Developer
+</h2>
+
+<p>
+Modern responsive website development.
+</p>
+
+</div>
+
+
+</div>
+
+</section>
+
+
+
+
+<section>
+
+<h2 class="title">
+Founder
+</h2>
+
+<p style="text-align:center;font-size:22px">
+
+🚀 Mawna Cyber Shield
+
+<br>
+
+
+🚀 Mawna SMM
+
+</p>
+
+</section>
+
+
+
+
+<section class="contact">
+
+<h2 class="title">
+Contact
+</h2>
+
+
+<p style="text-align:center;font-size:20px;line-height:2">
+
+
+📧 Email:
+<a href="mailto:kazimohammadalihossain@gmail.com">
+kazimohammadalihossain@gmail.com
+</a>
+
+
+<br>
+
+
+📷 Instagram:
+<a href="https://instagram.com/itsyouralivaiya60" target="_blank">
+itsyouralivaiya60
+</a>
+
+
+<br>
+
+
+📘 Facebook:
+<a href="https://www.facebook.com/itsyouralivaiya69" target="_blank">
+Kazi Mohammad Ali Hossain
+</a>
+
+
+<br>
+
+
+💬 WhatsApp:
+<a href="https://wa.me/8801947045537" target="_blank">
++8801947045537
+</a>
+
+
+</p>
+
+
+</section>
+
+
+
+
+<footer>
+
+© 2020 Kazi Mohammad Ali Hossain | All Rights Reserved
+
+</footer>
+
+
 
 </body>
 </html>
