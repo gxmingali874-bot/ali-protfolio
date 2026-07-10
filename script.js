@@ -1,30 +1,101 @@
-const text = [
-  "Web Developer",
-  "Frontend Designer",
-  "JavaScript Learner",
-  "Welcome To My Portfolio"
-];
+// Page loading animation
 
-let count = 0;
-let index = 0;
-let currentText = "";
-let letter = "";
+window.addEventListener("load",()=>{
 
-(function type() {
-  if (count === text.length) {
-    count = 0;
-  }
+document.body.style.opacity="1";
 
-  currentText = text[count];
-  letter = currentText.slice(0, ++index);
+});
 
-  document.getElementById("typing").textContent = letter;
 
-  if (letter.length === currentText.length) {
-    count++;
-    index = 0;
-    setTimeout(type, 1500);
-  } else {
-    setTimeout(type, 100);
-  }
-})();
+
+
+// 3D Card Mouse Effect
+
+const cards=document.querySelectorAll(".card");
+
+
+cards.forEach(card=>{
+
+
+card.addEventListener("mousemove",(e)=>{
+
+
+let x =
+(e.offsetX / card.offsetWidth - .5) * 20;
+
+
+let y =
+(e.offsetY / card.offsetHeight - .5) * 20;
+
+
+
+card.style.transform=
+`rotateY(${x}deg) rotateX(${-y}deg) scale(1.05)`;
+
+
+});
+
+
+
+card.addEventListener("mouseleave",()=>{
+
+
+card.style.transform=
+"rotateY(0deg) rotateX(0deg) scale(1)";
+
+
+});
+
+
+});
+
+
+
+
+// Smooth reveal animation
+
+const sections =
+document.querySelectorAll("section");
+
+
+const observer =
+new IntersectionObserver(entries=>{
+
+
+entries.forEach(entry=>{
+
+
+if(entry.isIntersecting){
+
+
+entry.target.style.opacity="1";
+
+entry.target.style.transform="translateY(0)";
+
+
+}
+
+
+});
+
+
+});
+
+
+
+sections.forEach(section=>{
+
+
+section.style.opacity="0";
+
+section.style.transform=
+"translateY(50px)";
+
+section.style.transition=
+"1s";
+
+
+observer.observe(section);
+
+
+});
