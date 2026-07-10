@@ -3,47 +3,71 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>KAZI MOHAMMAD ALI HOSSAIN</title>
-<link rel="stylesheet" href="style.css">
-<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+<title>Skills</title>
+
+<style>
+    body {
+        margin: 0;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: #000;
+        font-family: "Courier New", monospace;
+        color: #00ff41;
+    }
+
+    .card {
+        text-align: center;
+        padding: 40px;
+        border: 2px solid #00ff41;
+        box-shadow: 0 0 20px #00ff41;
+        background: rgba(0, 0, 0, 0.8);
+    }
+
+    h1 {
+        font-size: 45px;
+        text-transform: uppercase;
+        text-shadow: 0 0 10px #00ff41;
+    }
+
+    .skill {
+        font-size: 25px;
+        margin: 15px;
+        color: #00ffff;
+        text-shadow: 0 0 10px #00ffff;
+    }
+
+    .skill:hover {
+        color: #ff0000;
+        text-shadow: 0 0 15px red;
+        cursor: pointer;
+    }
+
+    .typing {
+        animation: glow 1s infinite alternate;
+    }
+
+    @keyframes glow {
+        from {
+            text-shadow: 0 0 5px #00ff41;
+        }
+        to {
+            text-shadow: 0 0 20px #00ff41;
+        }
+    }
+</style>
+
 </head>
+
 <body>
 
-<header>
-    <img src="profile.jpg" class="profile">
-    <h1>AL¡</h1>
-    <p id="typing"></p>
-</header>
+<div class="card">
+    <h1 class="typing">Skills</h1>
 
-<section class="about">
-    <h2>About Me</h2>
-    <p>Im Kazi Mohammad Ali Hossain. Admin Of Mawna Cyber Sheild And Mawna SMM, i live in Bangladesh </p>
-</section>
-
-<section class="skills">
-    <h2>Skills</h2>
-
-    <p>HTML</p>
-    <div class="bar"><span style="width:95%"></span></div>
-
-    <p>CSS</p>
-    <div class="bar"><span style="width:90%"></span></div>
-
-    <p>JavaScript</p>
-    <div class="bar"><span style="width:80%"></span></div>
-
-</section>
-
-<section class="contact">
-<h2>Contact</h2>
-
-<a href="#"><i class="fab fa-facebook"></i></a>
-<a href="#"><i class="fab fa-github"></i></a>
-<a href="#"><i class="fab fa-whatsapp"></i></a>
-
-</section>
-
-<script src="script.js"></script>
+    <div class="skill">> Cyber Security Expert</div>
+    <div class="skill">> Digital Marketing</div>
+</div>
 
 </body>
 </html>
